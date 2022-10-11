@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navber.css'
-const Navber = () => {
+const Navbar = () => {
     return (
-        <div className='mx-8'>
+        <div className='mx-4'>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -12,14 +11,17 @@ const Navber = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-4 shadow bg-base-100 rounded-box w-52">
                             <li className='text-xl text-pink-600 font-semibold'>
-                                <Link to="">Home</Link>
+                                <Link to="/">Home</Link>
                             </li>
                             <li className='text-xl text-pink-600 font-semibold' tabIndex={0}>
 
-                                <Link to="">Home</Link>
+                                <Link to="/Topics">Topics</Link>
                             </li>
                             <li className='text-xl text-pink-600 font-semibold'>
-                                <Link to="">Home</Link>
+                                <Link to="/Statistics">Statistics</Link>
+                            </li>
+                            <li className='text-xl text-pink-600 font-semibold'>
+                                <Link to="/Blog">Blog</Link>
                             </li>
                         </ul>
                     </div>
@@ -31,17 +33,22 @@ const Navber = () => {
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li className='text-xl text-pink-600 font-semibold'>
-                            <Link to="">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
 
                         <li className='text-xl text-pink-600 font-semibold' tabIndex={0}>
-                            <Link to=""></Link>
+                            <Link to="/Topics">Topics</Link>
 
                         </li>
 
                         <li className='text-xl text-pink-600 font-semibold'>
 
-                            <Link to="">Home</Link>
+                            <Link to="/Statistics">Statistics</Link>
+
+                        </li>
+                        <li className='text-xl text-pink-600 font-semibold'>
+
+                            <Link to="/Blog">Blog</Link>
 
                         </li>
                     </ul>
@@ -52,4 +59,4 @@ const Navber = () => {
     );
 };
 
-export default Navber;
+export default Navbar;
