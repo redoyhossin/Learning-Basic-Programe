@@ -7,7 +7,7 @@ const Statistics = () => {
     const recharts = getrecharts.data;
     
     return (
-        <div>
+        <div className='mx-4 mt-2'>
 
             <div style={{ width: '100%', height: 300 }}>
                 <ResponsiveContainer>

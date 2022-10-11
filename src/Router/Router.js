@@ -26,22 +26,20 @@ const Router = () => {
                 {
                     path: 'Statistics',
                     element: <Statistics />,
-                    loader:()=>fetch('https://openapi.programming-hero.com/api/quiz/'),
+                    loader: () => fetch('https://openapi.programming-hero.com/api/quiz/'),
                 },
                 {
                     path: 'Blog',
                     element: <Blog />
-                }
+                },
+                {
+                    path: '/Cart/:CartId',
+                    loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.CartId}`),
+                    element: <SingleCart />
+                },
+
             ]
         },
-
-
-        {
-            path: '/Cart/:CartId',
-            loader:({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.CartId}`),
-            element:<SingleCart/>
-        },
-
 
         {
             path: '*',
