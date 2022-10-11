@@ -2,6 +2,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Topics from '../component/AllTopic/Topics';
 import Blog from '../component/Blog/Blog';
+import SingleCart from '../component/Home/Cart/SingleCart/SingleCart';
 import Home from '../component/Home/Home';
 import Statistics from '../component/Statistics/Statistics';
 import Errorhandler from '../Errorhandler';
@@ -14,22 +15,33 @@ const Router = () => {
             children: [
                 {
                     path: '/',
-                    element:<Home/>
+                    element: <Home />,
+                    loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
                 },
                 {
                     path: 'Topics',
-                    element:<Topics/>
+                    element: <Topics />,
+
                 },
                 {
                     path: 'Statistics',
-                    element:<Statistics/>
+                    element: <Statistics />
                 },
                 {
                     path: 'Blog',
-                    element:<Blog/>
+                    element: <Blog />
                 }
             ]
         },
+
+
+        {
+            path: '/Cart/:CartId',
+            loader:({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.CartId}`),
+            element:<SingleCart/>
+        },
+
+
         {
             path: '*',
             element: <Errorhandler />
