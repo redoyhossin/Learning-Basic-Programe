@@ -10,9 +10,9 @@ const CartDetails = ({ SingleCart }) => {
         return option
     });
     return (
-        <div className='m-12 bg-stone-400 p-8' >
+        <div className='m-12 bg-stone-400 p-8 rounded-xl' >
 
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between mx-3'>
                 <div>
                     <h1 className='font-bold'>
                         {question.slice(3, -4)}
@@ -25,40 +25,41 @@ const CartDetails = ({ SingleCart }) => {
             </div>
 
 
-            <div className='py-4  my-4'>
+            <div className='py-4 px-6  my-4 bg-violet-600  rounded-xl'>
                 <div className="form-control ">
 
                     <label className=' flex items-center'>
-                        <input type="radio" name="radio-6" className="radio " />
-                        <span className="label-text mx-3 font-semibold">{result[0]}</span>
+                        <input  type="radio" name="radio-6" className="radio "/>
+                        <span className="label-text mx-3 font-semibold  text-white">{result[0]}</span>
                     </label>
                 </div>
 
             </div>
-            <div className='py-4  my-4'>
+
+            <div className='py-4 px-6  my-4 bg-violet-600  rounded-xl'>
                 <div className="form-control ">
                     <label className=' flex items-center'>
 
-                        <input type="radio" name="radio-6" className="radio " />
-                        <span className="label-text mx-3 font-semibold">{result[1]}</span>
+                        <input  type="radio" name="radio-6" className="radio " />
+                        <span className="label-text mx-3 font-semibold  text-white">{result[1]}</span>
                     </label>
                 </div>
             </div>
-            <div className='py-4  my-4'>
+            <div className='py-4 px-6  my-4 bg-violet-600  rounded-xl'>
                 <div className="form-control ">
                     <label className=' flex items-center'>
 
-                        <input type="radio" name="radio-6" className="radio " />
-                        <span className="label-text mx-3 font-semibold">{result[2]}</span>
+                        <input  type="radio" name="radio-6" className="radio " />
+                        <span className="label-text mx-3 font-semibold  text-white">{result[2]}</span>
                     </label>
                 </div>
             </div>
-            <div className='py-4  my-4'>
+            <div className='py-4 px-6  my-4 bg-violet-600  rounded-xl'>
                 <div className="form-control ">
                     <label className=' flex items-center'>
 
-                        <input type="radio" name="radio-6" className="radio " />
-                        <span className="label-text mx-3 font-semibold">{result[3]}</span>
+                        <input  type="radio" name="radio-6" className="radio " />
+                        <span className="label-text mx-3 font-semibold  text-white">{result[3]}</span>
                     </label>
                 </div>
             </div>
