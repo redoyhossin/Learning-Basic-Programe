@@ -8,7 +8,7 @@ const Home = () => {
     const getTopic = getTopics.data;
     return (
         <div>
-            <dir className='my-12'>
+            <dir className=''>
                 <MainHeader/>
             </dir>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-8 my-32 justify-items-center '>

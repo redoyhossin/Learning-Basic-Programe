@@ -3,7 +3,7 @@ import './MainHeader.css'
 import QuizeImg from '../../assets/Quize.png'
 const MainHeader = () => {
     return (
-        <div className='flex items-center justify-between mx-8  '>
+        <div className='sm:flex text-center lg:flex items-center justify-between mx-8'>
             <div>
                 <h1 className='text-6xl font-bold'>
                     Easy and intuitive <br />
@@ -11,8 +11,8 @@ const MainHeader = () => {
                 </h1>
             </div>
 
-            <div>
-                   <img className='w-96' src={QuizeImg} alt="" />
+            <div className='mt-12 '>
+                <img className='w-96' src={QuizeImg} alt="" />
             </div>
         </div>
     );
