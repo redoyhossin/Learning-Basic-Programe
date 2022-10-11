@@ -10,7 +10,8 @@ const SingleCart = () => {
             {
                 SingleCarts.map(SingleCart => <CartDetails key={SingleCart.id} SingleCart={SingleCart} />)
 
-            }
+            },
+           
         </div>
     );
 };
