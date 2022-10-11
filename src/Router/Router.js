@@ -1,5 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Errorhandler from '../Errorhandler';
 import Main from '../Layout/Main';
 const Router = () => {
     const router = createBrowserRouter([
@@ -8,9 +9,13 @@ const Router = () => {
             element: <Main />,
             children: [
                 {
-                    
+
                 }
             ]
+        },
+        {
+            path: '*',
+            element:<Errorhandler/>
         }
     ])
     return (
