@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Topics from '../component/AllTopic/Topics';
+import TopicsCart from '../component/AllTopic/TopicsCart/TopicsCart';
 import Blog from '../component/Blog/Blog';
 import SingleCart from '../component/Home/Cart/SingleCart/SingleCart';
 import Home from '../component/Home/Home';
@@ -21,8 +22,11 @@ const Router = () => {
                 {
                     path: 'Topics',
                     element: <Topics />,
+                    loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
 
                 },
+
+                
                 {
                     path: 'Statistics',
                     element: <Statistics />,

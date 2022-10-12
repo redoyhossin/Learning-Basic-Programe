@@ -44,9 +44,9 @@ const CartDetails = ({ SingleCart, getSingleCart }) => {
     return (
         <div>
 
-            <div className='m-12 bg-stone-400 p-8 rounded-xl' >
+            <div className='m-12 bg-stone-400 p-8 rounded-xl shadow-2xl ' >
 
-                <div className='flex items-center justify-between mx-3'>
+                <div className='flex items-center justify-between mx-3 sm:flex flex-col'>
                     <div>
                         <h1 className='font-bold'>
                             {question.slice(3, -4)}

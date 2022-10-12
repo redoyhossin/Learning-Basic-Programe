@@ -9,9 +9,9 @@ const Home = () => {
     return (
         <div>
             <dir className=''>
-                <MainHeader/>
+                <MainHeader />
             </dir>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-8 my-32 justify-items-center '>
+            <div className='grid  md:grid-cols-2 md:col-span-12 lg:grid-cols-4 gap-8 lg:my-32 justify-items-center '>
 
                 {
                     getTopic.map(topic => <Cart key={topic.id} topic={topic} />)

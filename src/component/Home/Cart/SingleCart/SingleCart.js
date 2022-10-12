@@ -6,7 +6,6 @@ import CartDetails from './CartDetails/CartDetails';
 const SingleCart = () => {
     const getSingleCart = useLoaderData();
     const SingleCarts = getSingleCart.data.questions;
-     console.log(getSingleCart.data.name)
     return (
         <div>
             <div>
@@ -15,7 +14,7 @@ const SingleCart = () => {
                     <p className='text-orange-600'>Total Quize {getSingleCart.data.total}</p>
                 </div>
             </div>
-            <div>
+            <div className="">
                 {
                     SingleCarts.map(SingleCart => <CartDetails key={SingleCart.id} getSingleCart={getSingleCart} SingleCart={SingleCart} />)
 
