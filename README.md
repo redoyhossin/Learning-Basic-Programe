@@ -75,7 +75,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ---
 ### Live site link
-link :
+link : https://relaxed-cocada-4d2190.netlify.app/
 
 
 ## Project description
