@@ -11,7 +11,7 @@ const Home = () => {
             <dir className=''>
                 <MainHeader />
             </dir>
-            <div className='grid  md:grid-cols-2 md:col-span-12 lg:grid-cols-4 gap-8 lg:my-32 justify-items-center '>
+            <div className='grid  md:grid-cols-2  lg:grid-cols-3 gap-8 my-32 justify-items-center '>
 
                 {
                     getTopic.map(topic => <Cart key={topic.id} topic={topic} />)

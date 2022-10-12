@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const CartDetails = ({ SingleCart, getSingleCart }) => {
     const { options, correctAnswer, id, question } = SingleCart;
-    const { name, total } = getSingleCart.data;
+    // const { name, total } = getSingleCart.data;
     const result = options.map(option => {
         return option
     });
@@ -43,6 +43,7 @@ const CartDetails = ({ SingleCart, getSingleCart }) => {
 
     return (
         <div>
+             
 
             <div className='m-12 bg-stone-400 p-8 rounded-xl shadow-2xl ' >
 
@@ -55,7 +56,6 @@ const CartDetails = ({ SingleCart, getSingleCart }) => {
                     <div>
 
                         <button onClick={ShowAns}><FontAwesomeIcon className='' icon={faEye} /></button>
-                        <ToastContainer />
                     </div>
                 </div>
 
@@ -102,9 +102,9 @@ const CartDetails = ({ SingleCart, getSingleCart }) => {
                     </div>
                 </div>
             </div>
-            <ToastContainer />
 
-        </div>
+
+        </div> 
 
     );
 };

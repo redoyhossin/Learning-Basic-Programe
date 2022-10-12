@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Topics from '../component/AllTopic/Topics';
-import TopicsCart from '../component/AllTopic/TopicsCart/TopicsCart';
+// import TopicsCart from '../component/AllTopic/TopicsCart/TopicsCart';
 import Blog from '../component/Blog/Blog';
 import SingleCart from '../component/Home/Cart/SingleCart/SingleCart';
 import Home from '../component/Home/Home';
