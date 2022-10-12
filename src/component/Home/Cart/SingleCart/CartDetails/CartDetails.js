@@ -29,7 +29,7 @@ const CartDetails = ({ SingleCart }) => {
                 <div className="form-control ">
 
                     <label className=' flex items-center'>
-                        <input  type="radio" name="radio-6" className="radio "/>
+                        <input type="radio" name="radio-6" className="radio " />
                         <span className="label-text mx-3 font-semibold  text-white">{result[0]}</span>
                     </label>
                 </div>
@@ -40,7 +40,7 @@ const CartDetails = ({ SingleCart }) => {
                 <div className="form-control ">
                     <label className=' flex items-center'>
 
-                        <input  type="radio" name="radio-6" className="radio " />
+                        <input type="radio" name="radio-6" className="radio " />
                         <span className="label-text mx-3 font-semibold  text-white">{result[1]}</span>
                     </label>
                 </div>
@@ -49,7 +49,7 @@ const CartDetails = ({ SingleCart }) => {
                 <div className="form-control ">
                     <label className=' flex items-center'>
 
-                        <input  type="radio" name="radio-6" className="radio " />
+                        <input type="radio" name="radio-6" className="radio " />
                         <span className="label-text mx-3 font-semibold  text-white">{result[2]}</span>
                     </label>
                 </div>
@@ -58,7 +58,7 @@ const CartDetails = ({ SingleCart }) => {
                 <div className="form-control ">
                     <label className=' flex items-center'>
 
-                        <input  type="radio" name="radio-6" className="radio " />
+                        <input type="radio" name="radio-6" className="radio " />
                         <span className="label-text mx-3 font-semibold  text-white">{result[3]}</span>
                     </label>
                 </div>
