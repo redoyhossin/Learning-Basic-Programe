@@ -13,7 +13,7 @@ const Cart = ({ topic }) => {
                     <h2 className="card-title">{name}</h2>
                     <p>Total Question: {total}</p>
                     <div className="card-actions">
-                        <Link to={`/Cart/${id}`} className='btn btn-primary'>Get Start</Link>
+                        <Link to={`/Cart/${id}`} className='btn btn-primary'>Start Practice</Link>
                     </div>
                 </div>
             </div>
