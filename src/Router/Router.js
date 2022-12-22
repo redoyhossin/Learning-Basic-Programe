@@ -39,7 +39,9 @@ const Router = () => {
                 {
                     path: '/Cart/:CartId',
                     loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.CartId}`),
-                    element: <SingleCart />
+                    element:
+                    
+                        <SingleCart />
                 },
 
             ]

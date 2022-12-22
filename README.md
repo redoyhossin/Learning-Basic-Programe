@@ -87,7 +87,7 @@ online  programming  quize practice and developed skills  many  feature
 and 
 home page quize part  see practice  like your Quize part   quize topics  
 setup  router  router components 
-statices  rechart  deaign blog
+Statistics  rechart  deaign blog
 some question answer 
 and others feature 
 
